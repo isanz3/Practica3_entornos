@@ -2,14 +2,14 @@ package cuentas;
 
 public class CCuenta {
 
-	//Atributos
+	/**Atributos*/
 	private String nombre;
 	private String cuenta;
 	private double saldo;
 	private double tipoInterés;
 
 
-	//getters and setters 
+	/**getters and setters */
 	public String getNombre() {
 		return nombre;
 	}
@@ -42,7 +42,7 @@ public class CCuenta {
 		this.tipoInterés = tipoInterés;
 	}
 	
-	//constructores
+	/**constructores*/
 	public CCuenta()
 	{
 	}
@@ -54,7 +54,7 @@ public class CCuenta {
 		setSaldo(sal);
 	}
 	
-	//otros métodos
+	/**otros métodos*/
 	public double estado()
 	{
 		return getSaldo();

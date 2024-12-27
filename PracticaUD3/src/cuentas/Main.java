@@ -2,13 +2,15 @@ package cuentas;
 
 public class Main {
 
-	/* El resultado de la ejecución es:
+	/** El resultado de la ejecución es:
 		El saldo actual es 2500.0
 		Ingreso en cuenta.
 	*/
 	public static void main(String[] args) {
 		operativa_cuenta();
 	}
+	/**
+	 Método que recoge todo lo relacionado con cuenta1*/
 	public static void operativa_cuenta(){
 		float cantidad;
 		CCuenta cuenta1;
