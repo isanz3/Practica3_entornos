@@ -1,8 +1,14 @@
 package cuentas;
 
+/**
+ * @author Irene
+ */
+
 public class CCuenta {
 
-	/**Atributos*/
+	/**
+	 * Atributos
+	 * */
 	private String nombre;
 	private String cuenta;
 	private double saldo;
@@ -41,7 +47,7 @@ public class CCuenta {
 	public void setTipoInterés(double tipoInterés) {
 		this.tipoInterés = tipoInterés;
 	}
-	
+
 	/**constructores*/
 	public CCuenta()
 	{
@@ -53,20 +59,35 @@ public class CCuenta {
 		setCuenta(cue);
 		setSaldo(sal);
 	}
-	
+
 	/**otros métodos*/
+
+	/**
+	 * 
+	 * @return el saldo que hay en ese momento en la cuenta
+	 */
 	public double estado()
 	{
 		return getSaldo();
 	}
 
+	/**
+	 * metodo para modificar el saldo una vez se ha establecido la cantidada a ingresar
+	 * @param cantidad
+	 * @throws Exception
+	 */
 	public void ingresar(double cantidad) throws Exception
 	{
 		if (cantidad<0)
 			throw new Exception("No se puede ingresar una cantidad negativa");
 		setSaldo ( getSaldo() + cantidad);
 	}
-
+	
+	/**
+	 * metodo para modificar el saldo una vez se ha establecido la cantidada a retirar
+	 * @param cantidad
+	 * @throws Exception
+	 */
 	public void retirar(double cantidad) throws Exception
 	{
 		if (cantidad <= 0)
